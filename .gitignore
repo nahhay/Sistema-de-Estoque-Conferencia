@@ -1,0 +1,20 @@
+# Arquivos compilados
+target/
+*.class
+
+# Logs
+logs/
+*.log
+
+# Configurações do banco
+config.properties
+
+# Histórico do VS Code
+.history/
+
+# IDE
+.vscode/
+.idea/
+
+# Dependências
+lib/

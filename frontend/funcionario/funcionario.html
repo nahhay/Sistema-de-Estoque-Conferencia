@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conferência - Funcionário</title>
+    <link rel="stylesheet" href="funcionario.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+<div class="app-container">
+    <header class="header">
+        <div class="header-content">
+            <h1>Conferência de Estoque</h1>
+            <span class="badge">Funcionário</span>
+        </div>
+        <div class="status-indicator">
+            <span class="dot connected"></span>
+            <span id="statusTexto">Conectado</span>
+        </div>
+    </header>
+
+    <main class="content">
+        <section id="tab-conferencias" class="tab-content active">
+            <div class="card">
+                <div class="card-header">
+                    <h2>Conferência de Estoque</h2>
+                    <button class="btn-refresh" onclick="listarConferencias()">⟳ Atualizar</button>
+                </div>
+                <div class="form-row">
+                    <input type="number" id="conferenciaProdutoId" placeholder="ID Produto" />
+                    <input type="number" id="conferenciaPontoId" placeholder="ID Ponto" />
+                    <input type="number" id="conferenciaFuncionarioId" placeholder="ID Funcionário" />
+                    <input type="number" id="conferenciaQuantidadeFisica" placeholder="Qtd. Contada" />
+                    <button class="btn-primary" onclick="realizarConferencia()">Realizar</button>
+                </div>
+                <div class="table-wrapper">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Produto</th>
+                                <th>Ponto</th>
+                                <th>Físico</th>
+                                <th>Divergência</th>
+                                <th>Responsável</th>
+                                <th>Data/Hora</th>
+                            </tr>
+                        </thead>
+                        <tbody id="listaConferencias">
+                            <tr><td colspan="6" class="empty-msg">Nenhuma conferência</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+<script src="funcionario.js"></script>
+</body>
+</html>
