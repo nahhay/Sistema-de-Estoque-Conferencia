@@ -1,14 +1,3 @@
-# Sistema de Estoque — Conferência
-
-<p align="center">
-  <img src="img/banner.png" alt="Sistema de Estoque - Conferência" width="100%">
-</p>
-
-<p align="center">
-  Sistema de conferência de estoque desenvolvido em <strong>Java 17</strong>, com API REST, PostgreSQL e dois painéis: Gerente e Funcionário.
-</p>
-
----
 
 ## Sobre o projeto
 
